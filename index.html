@@ -10,16 +10,12 @@
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
-
     Hello Camper!
-
     For now, the test suite only works in Chrome!
     Please read the README below in the JS Editor before beginning.
     Feel free to delete this message once you have read it.
     Good luck and Happy Coding!
-
     - The freeCodeCamp Team
-
     -->
 
     <script src="js/index.js"></script>
@@ -29,80 +25,156 @@
       Thank you for taking the time to help us improve the platform
     </p>
     <form id="survey-form" action="post">
-      <label for="name" id="name-label">Name</label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        placeholder="Enter your name"
-        required
-      />
-
-      <label for="email" id="email-label">Email</label>
-      <input
-        name="email"
-        type="email"
-        id="email"
-        placeholder="Enter your Email"
-        required
-      />
-
-      <label for="age" id="number-label">Age</label>
-      <input
-        type="number"
-        name="age"
-        id="number"
-        placeholder="Age"
-        min="18"
-        max="99"
-        required
-      />
-
-      <label for="role">Which option best describes your current role?</label>
-      <select id="dropdown" name="role" required>
-        <option disabled selected value>Select actual role</option>
-        <option value="job">Full Time Job</option>
-        <option value="learner">Full Time Learner</option>
-        <option value="student">Student</option>
-        <option value="preferNo">Prefer not to say</option>
-        <option value="other">Other</option>
-      </select>
-
-      <label>Will you recommend Microverse to a friend?</label>
-      <label>
+      <div class="form-control">
+        <label for="name" id="name-label">Name</label>
         <input
-          name="user-recommendation"
-          value="yes"
-          type="radio"
-          class="input-radio"
-          checked
-        />Yes</label
-      >
-      <label>
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-control">
+        <label for="email" id="email-label">Email</label>
         <input
-          name="user-recommendation"
-          value="no"
-          type="radio"
-          class="input-radio"
-        />No</label
-      >
+          name="email"
+          type="email"
+          id="email"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
 
-      <label
-        ><input
-          name="user-recommendation"
-          value="maybe"
-          type="radio"
-          class="input-radio"
-        />Maybe</label
-      >
+      <div class="form-control">
+        <label for="age" id="number-label">Age</label>
+        <input
+          type="number"
+          name="age"
+          id="number"
+          placeholder="Age"
+          min="18"
+          max="99"
+          required
+        />
+      </div>
 
-      <label for="suggest">Recommendations or suggestions?</label>
-      <textarea
-        id="suggest"
-        class="input-textarea"
-        name="suggest"
-        placeholder="Enter your text here..."
-      ></textarea>
+      <div class="form-control">
+        <label for="role">Which option best describes your current role?</label>
+        <select id="dropdown" name="role" required>
+          <option disabled selected value>Select actual role</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="student">Student</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label>Will you recommend Microverse to a friend?</label>
+        <label>
+          <input
+            name="user-recommendation"
+            value="yes"
+            type="radio"
+            class="input-radio"
+            checked
+          />Yes</label
+        >
+        <label>
+          <input
+            name="user-recommendation"
+            value="no"
+            type="radio"
+            class="input-radio"
+          />No</label
+        >
+
+        <label
+          ><input
+            name="user-recommendation"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+      </div>
+      <div class="form-control">
+        <label> What would you like to see improved? </label>
+
+        <label
+          ><input
+            name="prefer"
+            value="front-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Front-end Projects</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="back-end-projects"
+            type="checkbox"
+            class="input-checkbox"
+          />Back-end Projects</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="data-visualization"
+            type="checkbox"
+            class="input-checkbox"
+          />Data Visualization</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />Challenges</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="videos"
+            type="checkbox"
+            class="input-checkbox"
+          />Videos</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="wiki"
+            type="checkbox"
+            class="input-checkbox"
+          />Wiki</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="forum"
+            type="checkbox"
+            class="input-checkbox"
+          />Forum</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="additional-courses"
+            type="checkbox"
+            class="input-checkbox"
+          />Additional Courses</label
+        >
+      </div>
+      <div class="form-control">
+        <label for="suggest">Recommendations or suggestions?</label>
+        <textarea
+          id="suggest"
+          class="input-textarea"
+          name="suggest"
+          placeholder="Enter your text here..."
+        ></textarea>
+      </div>
 
       <button type="submit" id="submit" class="submit-button">Submit</button>
     </form>
