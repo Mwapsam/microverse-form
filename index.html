@@ -23,6 +23,80 @@
     -->
 
     <script src="js/index.js"></script>
-    <h1>Hello World!</h1>
+
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form" action="post">
+      <label for="name" id="name-label">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Enter your name"
+        required
+      />
+
+      <label for="email" id="email-label">Email</label>
+      <input
+        name="email"
+        type="email"
+        id="email"
+        placeholder="Enter your Email"
+        required
+      />
+
+      <label for="age" id="number-label">Age</label>
+      <input
+        type="number"
+        name="age"
+        id="number"
+        placeholder="Age"
+        min="18"
+        max="99"
+        required
+      />
+
+      <label for="role">Which option best describes your current role?</label>
+      <select id="dropdown" name="role" required>
+        <option disabled selected value>Select actual role</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="student">Student</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label>Will you recommend Microverse to a friend?</label>
+      <label>
+        <input
+          name="user-recommendation"
+          value="yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          name="user-recommendation"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+
+      <label
+        ><input
+          name="user-recommendation"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <button type="submit" id="submit" class="submit-button">Submit</button>
+    </form>
   </body>
 </html>
